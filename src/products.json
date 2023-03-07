@@ -1,65 +1,58 @@
 {
-    "products": [
-        {
-            "hCarne": {
+    "products": {
+        "hamburguesas": [
+            {
+                "id": "01",
                 "name": "Hamburguesa de carne ",
                 "cost": "s/.15"
-            }
-        },
-        {
-            "hPollo": {
+            },
+            {
+                "id": "02",
                 "name": "Hamburguesa de pollo ",
                 "cost": "s/.15"
-            }
-        },
-        {
-            "hVegetariana": {
+            },
+            {
+                "id": "03",
                 "name": "Hamburguesa vegetariana ",
                 "cost": "s/.15"
-            }
-        },
-        {
-            "hMixto": {
+            },
+            {
+                "id": "04",
                 "name": "Hamburguesa mixta ",
                 "cost": "s/.20"
-            }
-        },
-        {
-            "papas": {
+            },
+            {
+                "id": "05",
                 "name": "papas fritas",
                 "cost": "s/.10"
             }
-        },
-        {
-            "cafeAmericano": {
+        ],
+        "bebidas": [
+            {
+                "id": "06",
                 "name": "Café americano ",
                 "cost": "5"
-            }
-        },
-        {
-            "gaseosaL": {
+            },
+            {
+                "id": "07",
                 "name": "Gaseosa 1L",
                 "cost": "15"
-            }
-        },
-        {
-            "gaseosaMl": {
+            },
+            {
+                "id": "08",
                 "name": "Gaseosa 500 ml",
                 "cost": "10"
-            }
-        },
-        {
-            "aguaL": {
+            },
+            {
+                "id": "09",
                 "name": "Agua mineral 1L",
                 "cost": "15"
-            }
-        },
-        {
-            "aguaMl": {
+            },
+            {
+                "id": "10",
                 "name": "Agua mineral 500 ml",
                 "cost": "10"
             }
-        }
-    ]
+        ]
+    }
 }
-

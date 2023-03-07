@@ -1,8 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Product, Menu } from './App'
+import { Atencion } from './App'
 import hamburguesa from './hamburguesa.png'
 import bebida from './agua.png'
+import data from './products.json'
+
+const propiedad = data.products.bebidas
+console.log(propiedad)
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -26,20 +32,11 @@ const aguaMl = { name: "Agua mineral 500 ml", cost: "10" }
 
 root.render(
   <>
-    <p>Hola</p>
-    <Menu data={hamburguesas} />
-    <Menu data={bebidas} />
-    {/* <Product product={"Agua 1l"} cost={"s/. 10"} /> */}
-    <Product products={hCarne} type={hamburguesa} />
-    <Product products={hPollo} type={hamburguesa} />
-    <Product products={hVegetariana} type={hamburguesa}  />
-    <Product products={hMixto} type={hamburguesa} />
-    <Product products={papas} type={hamburguesa}  />
-    <Product products={cafeAmericano} />
-    <Product products={gaseosaL} />
-    <Product products={gaseosaMl} />
-    <Product products={aguaL} />
-    <Product products={aguaMl} />
+    {/* <Menu data={hamburguesas} />
+    <Menu data={bebidas} /> */}
+    <Atencion></Atencion>
+
+    
 
   </>
 )
