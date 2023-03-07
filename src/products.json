@@ -1,0 +1,65 @@
+{
+    "products": [
+        {
+            "hCarne": {
+                "name": "Hamburguesa de carne ",
+                "cost": "s/.15"
+            }
+        },
+        {
+            "hPollo": {
+                "name": "Hamburguesa de pollo ",
+                "cost": "s/.15"
+            }
+        },
+        {
+            "hVegetariana": {
+                "name": "Hamburguesa vegetariana ",
+                "cost": "s/.15"
+            }
+        },
+        {
+            "hMixto": {
+                "name": "Hamburguesa mixta ",
+                "cost": "s/.20"
+            }
+        },
+        {
+            "papas": {
+                "name": "papas fritas",
+                "cost": "s/.10"
+            }
+        },
+        {
+            "cafeAmericano": {
+                "name": "Café americano ",
+                "cost": "5"
+            }
+        },
+        {
+            "gaseosaL": {
+                "name": "Gaseosa 1L",
+                "cost": "15"
+            }
+        },
+        {
+            "gaseosaMl": {
+                "name": "Gaseosa 500 ml",
+                "cost": "10"
+            }
+        },
+        {
+            "aguaL": {
+                "name": "Agua mineral 1L",
+                "cost": "15"
+            }
+        },
+        {
+            "aguaMl": {
+                "name": "Agua mineral 500 ml",
+                "cost": "10"
+            }
+        }
+    ]
+}
+
