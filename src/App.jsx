@@ -1,13 +1,10 @@
-import "./App.css"
-import { Header } from "./componentes/Header"
-import { Product } from "./componentes/product"
-//import { Menu } from "./componentes/Menu"
+import "./App.css";
+import Atencion from "./pages/Atencion";
 
- export function Atencion ({}){
-   return(
-    <>
-    <Header></Header>
+function App({}) {
+  return (
+      <Atencion />
+  );
+}
 
-    </>
-   )
- }
+export default App
