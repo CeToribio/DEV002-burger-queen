@@ -7,33 +7,35 @@ import Button from "./Button.jsx";
 console.log(products);
 // const propiedad = data.products.bebidas
 // console.log(propiedad)
-const HCarne = { name: "Hamburguesa de carne", cost: "s/15"}
 
 export function Menu() {
-  const [choose, setChoose] = useState(false)
+  const [choose, setChoose] = useState("hamburguesas");
 
-  const text = choose ? "seleccionado" : "no seleccionado"
-  console.log(text)
+  // const show = choose ? "seleccionado" : "no seleccionado";
+  // console.log(show);
 
   const handleClick = () => {
-    setChoose(!choose)
-  }
+    setChoose(!choose);
+  };
+
+  const categoria = products.products[choose];
+  // console.log(categoria);
 
   return (
-      <>
-      <Button name="Hamburguesas" onClick={handleClick}></Button>
-      <Button name="Bebidas" onClick={handleClick}></Button>
-      {
-         products.products.bebidas.map( product => <Product data={product}/> )
-      }
-
-
-      
-      </>
-    
+    <>
+      <Button name="Hamburguesas" onClick={() => {handleClick("hamburguesas")}}></Button>
+      <Button name="Bebidas" onClick={() => {handleClick("bebidas")}}></Button>
+      <div>
+        {categoria.map((product) => (
+          <Product key={product.id} data={product} />
+        ))}
+        {/* {products.products.hamburguesas.map((product) => (
+          <Product key={product.id} data={product} />
+        ))} */}
+      </div>
+    </>
   );
 }
-
 
 // export function Menu({ data }) {
 //   //const state = useState(false)

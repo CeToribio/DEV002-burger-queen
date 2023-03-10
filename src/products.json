@@ -31,27 +31,27 @@
             {
                 "id": "06",
                 "name": "Café americano ",
-                "cost": "5"
+                "cost": "s/.5"
             },
             {
                 "id": "07",
                 "name": "Gaseosa 1L",
-                "cost": "15"
+                "cost": "s/.15"
             },
             {
                 "id": "08",
                 "name": "Gaseosa 500 ml",
-                "cost": "10"
+                "cost": "s/.10"
             },
             {
                 "id": "09",
                 "name": "Agua mineral 1L",
-                "cost": "15"
+                "cost": "s/.15"
             },
             {
                 "id": "10",
                 "name": "Agua mineral 500 ml",
-                "cost": "10"
+                "cost": "s/.10"
             }
         ]
     }
