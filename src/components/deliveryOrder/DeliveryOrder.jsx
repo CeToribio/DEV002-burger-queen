@@ -1,7 +1,6 @@
 import "./deliveryOrder.css";
 
 function DeliveryOrder({ data }) {
-  //console.log(data);
 
   return (
     <>
@@ -13,7 +12,6 @@ function DeliveryOrder({ data }) {
           <p>PEDIDO :</p>
           <div>
             {data.order.map((element) => {
-              //console.log(element);
               return (
                 <div key={element.id}>
                   <p>{element.count}</p>

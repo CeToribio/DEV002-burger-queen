@@ -6,7 +6,7 @@ import { addDoc, orderCollection, Timestamp } from "../../firebase/firebase";
 import Swal from "sweetalert2";
 
 function NewOrder({ array, total, add, subtract, delet, cleanArray }) {
-  //console.log(array)
+
   const [client, setClient] = useState("");
 
   async function handleClick() {
@@ -40,8 +40,6 @@ function NewOrder({ array, total, add, subtract, delet, cleanArray }) {
               milisegundos: Date.now(),
             });
             if (addOrder) {
-              console.log("se envio a cocina");
-              // console.log(valueClient)
               // valueClient.value = ""
               // orderClient.innerHTML = "No hay productos seleccionados :/"
               cleanOrder();

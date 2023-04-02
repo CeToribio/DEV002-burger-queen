@@ -22,12 +22,12 @@ function Orders({ user }) {
 
   useEffect(() => {
     const orderData = query(orderCollection, orderBy("date", "asc"));
-    //console.log(orderData)
+    
     onSnapshot(orderData, (snapshot) => {
       const docFilter = snapshot.docs.filter(
         (doc) => doc.data().state === "ready"
       );
-      //console.log(docFilter)
+      
       setOrderReady(docFilter.map((doc) => ({ ...doc.data(), id: doc.id })));
     });
   }, []);
@@ -36,12 +36,11 @@ function Orders({ user }) {
 
   useEffect(() => {
     const orderData = query(orderCollection, orderBy("date", "desc"));
-    //console.log(orderData)
+
     onSnapshot(orderData, (snapshot) => {
       const docFilter = snapshot.docs.filter(
         (doc) => doc.data().state === "delivery"
       );
-      //console.log(docFilter)
       setOrderDelivery(docFilter.map((doc) => ({ ...doc.data(), id: doc.id })));
     });
   }, []);

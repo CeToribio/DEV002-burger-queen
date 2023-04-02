@@ -21,7 +21,6 @@ function Attention({ user }) {
   };
 
   const categoria = products.menu[choose];
-  //console.log(categoria);
 
   //-------------------------nueva orden y operaciones
 
@@ -32,7 +31,6 @@ function Attention({ user }) {
 
   function addProduct(product) {
     const find = copyOrder.findIndex((e) => e.id === product.id);
-    //console.log(find);
     if (find === -1) {
       const newProduct = { ...product, count: 1, subtotal: product.cost };
       setOrder(copyOrder.concat(newProduct));
@@ -45,16 +43,13 @@ function Attention({ user }) {
           : copyOrder[find].count * copyOrder[find].cost;
       setOrder(copyOrder);
     }
-    //console.log(product);
+
   }
 
   useEffect(() => {
-    //console.log(order)
     const sumSubtotal = copyOrder.map((e) => e.subtotal);
-    //console.log(sumSubtotal);
     //const totalSum = sumSubtotal.reduce((a, b) => a + b, 0)
     setTotal(sumSubtotal.reduce((a, b) => a + b, 0));
-    //console.log(totalSum)
   }, [order]);
 
   function subtractProduct(product) {

@@ -17,7 +17,6 @@ function PendingOrder({ data, ready }) {
           <p>PEDIDO:</p>
           <div className="divOrder">
             {data.order.map((element) => {
-              //console.log(element);
               return (
                 <div key={element.id} className="divOrders">
                   {/* <Timer /> */}

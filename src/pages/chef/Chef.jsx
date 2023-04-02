@@ -22,34 +22,29 @@ function Chef({ user }) {
 
   useEffect(() => {
     const orderData = query(orderCollection, orderBy("date", "asc"));
-    //console.log(orderData)
     onSnapshot(orderData, (snapshot) => {
       const docFilter = snapshot.docs.filter(
         (doc) => doc.data().state === "pending"
       );
-      //console.log(docFilter)
       setOrder(docFilter.map((doc) => ({ ...doc.data(), id: doc.id })));
     });
   }, []);
 
-  //console.log(order)
 
   const [orderReady, setOrderReady] = useState([]);
 
   useEffect(() => {
     const orderData = query(orderCollection, orderBy("date", "desc"));
-    //console.log(orderData)
+
     onSnapshot(orderData, (snapshot) => {
       const docFilter = snapshot.docs.filter(
         (doc) => doc.data().state === "ready"
       );
-      //console.log(docFilter)
       setOrderReady(docFilter.map((doc) => ({ ...doc.data(), id: doc.id })));
     });
   }, []);
 
   const handleStateReady = async (order) => {
-    //console.log(order)
     const newOrder = doc(db, "NewOrder", order.id);
     const data = { state: "ready" };
     await updateDoc(newOrder, data);

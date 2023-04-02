@@ -1,8 +1,7 @@
 import "./product.css";
 
 function Product({ data, onClick, id }) {
-  //const show = type ? "hamburguesa" : "no"
-  //console.log(show)
+  
   const { name, cost } = data;
   function handleClick() {
     onClick(data);

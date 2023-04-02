@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 
 function Timer({ timerOrder }) {
-  //console.log(timerOrder)
+  
   const [timer, setTimer] = useState({ m: 0, s: 0 });
-
-  //console.log(timer);
 
   const agregarCero = (valor) => {
     if (valor < 10) {
@@ -19,7 +17,6 @@ function Timer({ timerOrder }) {
     milisegundos -= minutos * 60 * 1000;
     const segundos = milisegundos / 1000;
     //  return (`${agregarCero(minutos)}:${agregarCero(segundos.toFixed(0))}`);
-    //console.log(minutos, segundos.toFixed(0));
     return { m: minutos, s: segundos.toFixed(0) };
   };
 

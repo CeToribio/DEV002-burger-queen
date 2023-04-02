@@ -13,9 +13,7 @@ function Login() {
     e.preventDefault();
 
     const email = e.target.email.value;
-    console.log(email);
     const password = e.target.password.value;
-    console.log(password);
 
     if (email === "") {
       messageEmail.innerHTML = "ingrese su correo";
@@ -24,7 +22,7 @@ function Login() {
     } else {
       try {
         const user = await loginUser(email, password);
-        console.log(user);
+        // console.log(user);
         navigate("/home");
         // setCredentials({ email: '', password: '' });
       } catch (error) {

@@ -24,7 +24,6 @@ function Header({ user }) {
       confirmButtonColor: "#fe5f55",
     }).then((response) => {
       if (response.isConfirmed) {
-        console.log("logout");
         logoutUser();
         navigate("/");
       }
